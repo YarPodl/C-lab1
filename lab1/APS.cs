@@ -12,7 +12,7 @@ namespace lab1
         public int number;
         public String addres;
         public int countUsers;
-        public float usersPay;
+        public double usersPay;
         public String tarif;
         public int freeLines;
 
@@ -49,7 +49,7 @@ namespace lab1
             freeLines = 0;
         }
 
-        public APS(string name, int number, string addres, int countUsers, float usersPay, string tarif, int freeLines)
+        public APS(string name, int number, string addres, int countUsers, double usersPay, string tarif, int freeLines)
         {
             this.name = name;
             this.number = number;
@@ -66,6 +66,8 @@ namespace lab1
                 + name
                 + "\nномер: "
                 + number.ToString()
+                + ", в шестнадцатиричной СС: "
+                + Convert.ToString(number, 16)
                 + "\nадрес: "
                 + addres
                 + "\nколичество пользователей: "
@@ -83,7 +85,7 @@ namespace lab1
         }
         public void printNumber16()
         {
-            Console.WriteLine(String.Format());
+            Console.WriteLine();
         }
     }
 }
